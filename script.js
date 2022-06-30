@@ -87,7 +87,7 @@ const findAverageScore = (array) => {
 console.log(findAverageScore(submissions));
 
 const filterPassing = (array) => {
-  const passing = array.filter((submission) => submission.score >= 60);
+  const passing = array.filter((submission) => submission.passed === true);
   return passing;
 };
 
